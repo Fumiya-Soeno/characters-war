@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: characters_war
+  database: CW-chat-space_production
   username: characters-war
   password: <%= ENV['CHARACTERS-WAR_DATABASE_PASSWORD'] %>
