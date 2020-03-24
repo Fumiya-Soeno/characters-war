@@ -2,13 +2,17 @@
   .side-bar__header
     .side-bar__header__box
       .side-bar__header__box__leftbox
-        username
+        = current_user.name
       .side-bar__header__box__rightbox
-        = icon('far', 'edit')
-        = icon('fas', 'cog')
+        = link_to new_group_path do
+          = icon('far', 'edit')
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'cog')
   .side-bar__main
-    .side-bar__main__group
-      .side-bar__main__group__groupname
-        groupname
-      .side-bar__main__group__lastmessage
-        no messages
+    - current_user.groups.each do |group|
+      .side-bar__main__group
+        = link_to groups_path do
+          .side-bar__main__group__groupname
+            = group.name
+          .side-bar__main__group__lastmessage
+            no messages
