@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: characters-war_production
+  database: characters_war
   username: characters-war
   password: <%= ENV['CHARACTERS-WAR_DATABASE_PASSWORD'] %>
