@@ -33,5 +33,4 @@ class MessagesController < ApplicationController
   def set_members
     @members = GroupUser.where(group_id: "#{@group.id}")
   end
-
 end
