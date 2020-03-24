@@ -132,26 +132,28 @@
     height: 90px;
     background-color: #d2d2d2;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 40px;
-    position: relative;
     &__text{
+      position: relative;
       padding-left: 10px;
       padding-right: 40px;
       width: 80%;
       height: 50px;
-    }
-    &__label{
-      position: absolute;
-      left: 71%;
-      .none{
-        display: none;
+      &__label{
+        position: absolute;
+        left: 80%;
+        .none{
+          display: none;
+        }
       }
     }
     &__submit{
-      width: 15%;
+      font-weight: bold;
+      width: 18%;
       height: 50px;
-      margin-left: 3%;
+      margin-left: 10px;
       color: #fff;
       background-color: #38aef0;
     }
