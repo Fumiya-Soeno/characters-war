@@ -38,11 +38,13 @@
     background-color: #2f3e51;
     overflow: scroll;
     &__group{
-      padding: 25px 20px 30px 20px;
-      &:hover{
-        background-color: #506888;
-      }
       a{
+        width: 100%;
+        display: inline-block;
+        padding: 25px 20px 30px 20px;
+        &:hover{
+          background-color: #506888;
+        }
         color: #fff;
         text-decoration: none;
       }
@@ -88,19 +90,28 @@
       padding-right: 40px;
       &__btn{
         &_edit{
-          margin-left: 10px;
-          text-align: center;
-          width: 72px;
-          padding: 8px 0;
-          color: #38aef0;
-          border: 1px solid #38aef0;
+          a{
+            display: inline-block;
+            margin-left: 10px;
+            text-align: center;
+            width: 72px;
+            padding: 8px 0;
+            border: 1px solid #38aef0;
+            color: #38aef0;
+            text-decoration: none;
+          }
         }
         &_war{
-          text-align: center;
-          width: 72px;
-          padding: 8px 0;
-          color: #f038ae;
-          border: 1px solid #f038ae;
+          a{
+            display: inline-block;
+            margin-left: 10px;
+            text-align: center;
+            width: 72px;
+            padding: 8px 0;
+            color: #f038ae;
+            border: 1px solid #f038ae;
+            text-decoration: none;
+          }
         }
       }
     }
@@ -136,31 +147,34 @@
   &__footer{
     height: 90px;
     background-color: #d2d2d2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    &__text{
-      position: relative;
-      padding-left: 10px;
-      padding-right: 40px;
-      width: 80%;
-      height: 50px;
-      &__label{
+    #new_message{
+      padding:0 40px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .text{
+        position: relative;
+        padding-left: 10px;
+        padding-right: 40px;
+        width: 80%;
+        height: 50px;
+      }
+      .label{
         position: absolute;
         left: 80%;
         .none{
           display: none;
         }
       }
-    }
-    &__submit{
-      font-weight: bold;
-      width: 18%;
-      height: 50px;
-      margin-left: 10px;
-      color: #fff;
-      background-color: #38aef0;
+      .submit{
+        font-weight: bold;
+        width: 18%;
+        height: 50px;
+        margin-left: 10px;
+        color: #fff;
+        background-color: #38aef0;
+      }
     }
   }
 }
