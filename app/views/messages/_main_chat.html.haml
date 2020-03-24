@@ -1,0 +1,36 @@
+.main-chat
+  .main-chat__header
+    .main-chat__header__leftbox
+      .main-chat__header__leftbox__groupname
+        groupname
+      .main-chat__header__leftbox__member
+        Member:
+        fumiya
+    .main-chat__header__rightbox
+      .main-chat__header__rightbox__btn_war
+        WAR
+      .main-chat__header__rightbox__btn_edit
+        Edit
+  .main-chat__main
+    .main-chat__main__message
+      .main-chat__main__message__upper
+        .main-chat__main__message__upper__username
+          fumiya
+        .main-chat__main__message__upper__date
+          2020/3/25(wed) 12:00:00
+      .main-chat__main__message__lower
+        hello!
+    .main-chat__main__message
+      .main-chat__main__message__upper
+        .main-chat__main__message__upper__username
+          fumiya
+        .main-chat__main__message__upper__date
+          2020/3/25(wed) 12:00:00
+      .main-chat__main__message__lower
+        hello!
+  .main-chat__footer
+    %input{class: "main-chat__footer__text", placeholder: "type a message"}
+    %label{class: "main-chat__footer__label"}
+      %input{type: "file",class: "none"}
+      = icon('fas', 'image')
+    %input{class: "main-chat__footer__submit", type: "submit",value: "Send"}
