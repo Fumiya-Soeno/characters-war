@@ -22,8 +22,14 @@
                   = char.name
               .status
                 - @movements.each do|movement|
-                  - if(movement.id == char.movement_id)
-                    = movement.name
+                  - if(movement.id == 1)
+                    直線往復
+                    %br
+                  - if(movement.id == 2)
+                    追尾
+                    %br
+                  - if(movement.id == 3)
+                    散策
                     %br
                 %div
                   %span 生命
