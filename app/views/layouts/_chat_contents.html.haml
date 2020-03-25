@@ -21,16 +21,15 @@
                 .darkness.charname
                   = char.name
               .status
-                - @movements.each do|movement|
-                  - if(movement.id == 1)
-                    直線往復
-                    %br
-                  - if(movement.id == 2)
-                    追尾
-                    %br
-                  - if(movement.id == 3)
-                    散策
-                    %br
+                - if(char.movement_id == 1)
+                  直線往復
+                  %br
+                - if(char.movement_id == 2)
+                  直近追従
+                  %br
+                - if(char.movement_id == 3)
+                  八方散策
+                  %br
                 %div
                   %span 生命
                   .params
